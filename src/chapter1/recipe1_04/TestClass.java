@@ -16,4 +16,9 @@ public class TestClass {
     void setLong(long val) {
         visibleOnlyInThisClass = val;
     }
+
+    long getLong() {
+        return visibleOnlyInThisClass;
+    }
+
 }
