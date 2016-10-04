@@ -10,4 +10,10 @@ package chapter1.recipe1_04;
  * To change this template use File | Settings | File Templates.
  */
 public class TestClass {
+    private long visibleOnlyInThisClass;
+    double visibleFromEntirePackage;
+
+    void setLong(long val) {
+        visibleOnlyInThisClass = val;
+    }
 }
