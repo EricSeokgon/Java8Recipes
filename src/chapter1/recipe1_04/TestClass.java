@@ -20,5 +20,4 @@ public class TestClass {
     long getLong() {
         return visibleOnlyInThisClass;
     }
-
 }
