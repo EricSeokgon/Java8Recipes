@@ -1,4 +1,4 @@
-package chapter2.recope_02_01;
+package chapter2.recipe_02_01;
 
 import javafx.application.Application;
 import javafx.scene.Group;
