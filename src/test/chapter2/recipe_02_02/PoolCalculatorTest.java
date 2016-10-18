@@ -47,7 +47,7 @@ public class PoolCalculatorTest {
      */
     @Test
     public void testSetWidth() throws Exception {
-//TODO: Test goes here... 
+//TODO: Test goes here...
     }
 
     /**
@@ -55,7 +55,7 @@ public class PoolCalculatorTest {
      */
     @Test
     public void testGetLength() throws Exception {
-//TODO: Test goes here... 
+//TODO: Test goes here...
     }
 
     /**
@@ -63,7 +63,7 @@ public class PoolCalculatorTest {
      */
     @Test
     public void testSetLength() throws Exception {
-//TODO: Test goes here... 
+//TODO: Test goes here...
     }
 
     /**
@@ -71,7 +71,7 @@ public class PoolCalculatorTest {
      */
     @Test
     public void testGetMinDepth() throws Exception {
-//TODO: Test goes here... 
+//TODO: Test goes here...
     }
 
     /**
@@ -79,7 +79,7 @@ public class PoolCalculatorTest {
      */
     @Test
     public void testSetMinDepth() throws Exception {
-//TODO: Test goes here... 
+//TODO: Test goes here...
     }
 
     /**
@@ -87,7 +87,7 @@ public class PoolCalculatorTest {
      */
     @Test
     public void testGetMaxDepth() throws Exception {
-//TODO: Test goes here... 
+//TODO: Test goes here...
     }
 
     /**
@@ -95,7 +95,7 @@ public class PoolCalculatorTest {
      */
     @Test
     public void testSetMaxDepth() throws Exception {
-//TODO: Test goes here... 
+//TODO: Test goes here...
     }
 
     /**
@@ -103,7 +103,7 @@ public class PoolCalculatorTest {
      */
     @Test
     public void testCalculateVolume() throws Exception {
-//TODO: Test goes here... 
+//TODO: Test goes here...
     }
 
     /**
@@ -111,7 +111,7 @@ public class PoolCalculatorTest {
      */
     @Test
     public void testCalculateGallons() throws Exception {
-//TODO: Test goes here... 
+//TODO: Test goes here...
     }
 
 
