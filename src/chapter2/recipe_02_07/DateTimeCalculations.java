@@ -24,5 +24,11 @@ public class DateTimeCalculations {
         LocalDate datePlusWeeks = myDate.plusWeeks(8);
         System.out.println("Today plus 8 weeks : " + datePlusWeeks);
 
+        LocalTime timePlusHours = myTime.plusHours(5);
+        System.out.println("Time Plus 5 Hours : " + timePlusHours);
+        LocalTime timeMinusMin = myTime.minusMinutes(30);
+
+
+
     }
 }
