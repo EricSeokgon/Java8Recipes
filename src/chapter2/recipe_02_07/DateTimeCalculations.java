@@ -29,7 +29,5 @@ public class DateTimeCalculations {
 
         LocalTime timeMinusMin = myTime.minusMinutes(30);
         System.out.println("Time Minus 30 Minustes : " + timeMinusMin);
-
-
     }
 }
