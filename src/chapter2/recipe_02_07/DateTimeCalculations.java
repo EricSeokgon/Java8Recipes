@@ -21,5 +21,8 @@ public class DateTimeCalculations {
         LocalDate datePlusDays = myDate.plusDays(15);
         System.out.println("Today plus 15 Days : " + datePlusDays);
 
+        LocalDate datePlusWeeks = myDate.plusWeeks(8);
+        System.out.println("Today plus 8 weeks : " + datePlusWeeks);
+
     }
 }
