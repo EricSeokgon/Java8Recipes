@@ -15,5 +15,14 @@ import java.util.List;
 public class IteratingOverCollectionData {
     public static void main(String[] args) {
         List<String> myList = new ArrayList();
+
+        //Populate the list
+        for (int x = 0; x < 10; x++) {
+            myList.add("Test " + x);
+        }
+        //Print each element within the list
+        myList.stream().forEach((value) -> {
+            System.out.println(value);
+        });
     }
 }
