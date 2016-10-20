@@ -16,5 +16,4 @@ public class IteratingOverCollectionData {
     public static void main(String[] args) {
         List<String> myList = new ArrayList();
     }
-
 }
