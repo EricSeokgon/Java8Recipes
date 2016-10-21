@@ -36,4 +36,8 @@ public class Recipe02_09 extends Application {
             swingNode.setContent(new JLabel("Hello Swing"));
         });
     }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 }
