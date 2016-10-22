@@ -9,6 +9,7 @@ import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
 import java.time.LocalDate;
+import java.time.chrono.JapaneseChronology;
 
 /**
  * Created by hadeslee on 2016-10-22.
@@ -25,6 +26,8 @@ public class Recipe02_10 extends Application {
                     dateLabel.setText("The selected date is: " + datePicker.getValue());
                 }
         );
+        datePicker.setShowWeekNumbers(true);
+        datePicker.setChronology(JapaneseChronology.INSTANCE);
         FlowPane flow = new FlowPane();
         flow.setPadding(new Insets(5, 5, 5, 5));
         flow.getChildren().add(dateLabel);
