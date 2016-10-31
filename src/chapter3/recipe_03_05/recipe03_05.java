@@ -15,5 +15,8 @@ public class recipe03_05 {
         String two = "Java8";
         String result = one.concat(" ".concat(two));
         System.out.println(result);
+
+        String result2 = one + " " + two;
+        System.out.println(result2);
     }
 }
