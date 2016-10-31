@@ -18,5 +18,10 @@ public class recipe03_05 {
 
         String result2 = one + " " + two;
         System.out.println(result2);
+
+        StringBuffer buffer = new StringBuffer();
+        buffer.append(one).append(" ").append(two);
+        String result3 = buffer.toString();
+        System.out.println(result3);
     }
 }
