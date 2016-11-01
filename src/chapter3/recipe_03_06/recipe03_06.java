@@ -15,5 +15,8 @@ public class recipe03_06 {
         String two = "2";
         int result = Integer.valueOf(one) + Integer.valueOf(two);
         System.out.println(result);
+
+        int result2 = Integer.parseInt(one) + Integer.parseInt(two);
+        System.out.println(result2);
     }
 }
