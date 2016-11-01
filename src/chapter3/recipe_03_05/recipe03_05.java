@@ -23,5 +23,8 @@ public class recipe03_05 {
         buffer.append(one).append(" ").append(two);
         String result3 = buffer.toString();
         System.out.println(result3);
+
+        String result4 = one.concat(" ".concat(two.substring(0, two.length() - 1)));
+        System.out.println(result4);
     }
 }
