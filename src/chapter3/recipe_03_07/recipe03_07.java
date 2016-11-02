@@ -16,5 +16,9 @@ public class recipe03_07 {
         for (char chr : str.toCharArray()) {
             System.out.println(chr);
         }
+
+        for (int x = 0; x < str.length() - 1; x++) {
+            System.out.println(str.charAt(x));
+        }
     }
 }
