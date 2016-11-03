@@ -24,5 +24,10 @@ public class recipe03_08 {
 
         result = str.matches("[Tt]rue|[Ff]alse");
         System.out.println(result);
+
+        str = "I love Java 8!";
+
+        result = str.matches("I love Java [0-9]!");
+        System.out.println(result);
     }
 }
