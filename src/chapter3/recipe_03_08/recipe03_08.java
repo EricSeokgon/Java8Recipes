@@ -29,5 +29,10 @@ public class recipe03_08 {
 
         result = str.matches("I love Java [0-9]!");
         System.out.println(result);
+
+        result = str.matches("I love .*[ 0-9]!");
+        System.out.println(result);
+
+
     }
 }
