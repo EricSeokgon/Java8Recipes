@@ -33,6 +33,8 @@ public class recipe03_08 {
         result = str.matches("I love .*[ 0-9]!");
         System.out.println(result);
 
-
+        str = "I love Jython 2.5.4!";
+        result = str.matches("I love .*[ 0-9]!");
+        System.out.println(result);
     }
 }
