@@ -1,5 +1,8 @@
 package chapter3.recipe_03_08;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * Project: Java8Recipes
  * FileName: recipe03_08
@@ -36,5 +39,13 @@ public class recipe03_08 {
         str = "I love Jython 2.5.4!";
         result = str.matches("I love .*[ 0-9]!");
         System.out.println(result);
+
+        str = "I love Jav 8!";
+        boolean result2 = false;
+
+        Pattern pattern = Pattern.compile("I love .*[ 0-9]!");
+        Matcher matcher = pattern.matcher(str);
+        result2 = matcher.matches();
+        System.out.println(result2);
     }
 }
