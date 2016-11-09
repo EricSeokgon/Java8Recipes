@@ -42,7 +42,5 @@ public class recipe04_02 {
         } catch (java.text.ParseException ex) {
             System.out.println(ex);
         }
-
-
     }
 }
