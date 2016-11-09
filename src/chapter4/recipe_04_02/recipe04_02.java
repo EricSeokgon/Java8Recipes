@@ -22,5 +22,10 @@ public class recipe04_02 {
     public static void main(String[] args) {
         formatDouble(345.9372);
         formatDouble(.7697);
+
+        NumberFormat format = NumberFormat.getInstance();
+
+        String result = format.format(83.404);
+        System.out.println(result);
     }
 }
