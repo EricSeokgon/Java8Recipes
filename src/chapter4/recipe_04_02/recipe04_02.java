@@ -34,5 +34,15 @@ public class recipe04_02 {
         //Format a double value for an Italian locale
         result = format.getInstance(Locale.KOREAN).format(83.404);
         System.out.println(result);
+
+        //Parse a String into a Number
+        try {
+            Number num = format.parse("75.736");
+            System.out.println(num);
+        } catch (java.text.ParseException ex) {
+            System.out.println(ex);
+        }
+
+
     }
 }
