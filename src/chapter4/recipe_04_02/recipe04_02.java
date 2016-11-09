@@ -2,6 +2,7 @@ package chapter4.recipe_04_02;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.Locale;
 
 /**
  * Project: Java8Recipes
@@ -23,9 +24,15 @@ public class recipe04_02 {
         formatDouble(345.9372);
         formatDouble(.7697);
 
+        //Obtains an instance of NumberFormat class
         NumberFormat format = NumberFormat.getInstance();
 
+        //Format a double value for the current locale
         String result = format.format(83.404);
+        System.out.println(result);
+
+        //Format a double value for an Italian locale
+        result = format.getInstance(Locale.KOREAN).format(83.404);
         System.out.println(result);
     }
 }
