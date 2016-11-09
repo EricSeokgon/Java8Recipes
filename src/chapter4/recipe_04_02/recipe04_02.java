@@ -18,4 +18,9 @@ public class recipe04_02 {
         String result = numberFormatter.format(myDouble);
         System.out.println(result);
     }
+
+    public static void main(String[] args) {
+        formatDouble(345.9372);
+        formatDouble(.7697);
+    }
 }
