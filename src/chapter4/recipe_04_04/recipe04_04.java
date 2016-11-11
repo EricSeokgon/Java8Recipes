@@ -13,5 +13,10 @@ public class recipe04_04 {
         System.out.println(float2.compareTo(float3)); //result : -1
         System.out.println(float1.compareTo(float1)); //result : 0
         System.out.println(float3.compareTo(float2)); //result : 1
+
+        System.out.println(Float.compare(float1, float3)); //result : -1
+        System.out.println(Float.compare(float2, float3)); //result : -1
+        System.out.println(Float.compare(float1, float1)); //result : 0
+        System.out.println(Float.compare(float3, float2)); //result : 1
     }
 }
