@@ -10,5 +10,9 @@ public class recipe04_06 {
         //Create a new instance of the Random class
         Random random = new Random();
 
+        //Generates a random Integer
+        int myInt = random.nextInt();
+
+
     }
 }
