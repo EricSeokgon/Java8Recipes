@@ -19,13 +19,16 @@ public class recipe04_06 {
         //Generates a random float
         float myFloat = random.nextFloat();
 
-        //Generate a random Gaussian double
+        //Generates a random Gaussian double
         //mean 0.0 and standard deviation 1.0
         //from this random number generator's sequence.
         double gausDouble = random.nextGaussian();
 
         //Generates a random Long
         long myLong = random.nextLong();
+
+        //Generates a random boolean
+        boolean mtBoolean = random.nextBoolean();
 
     }
 }
