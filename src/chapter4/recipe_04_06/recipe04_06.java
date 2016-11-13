@@ -13,8 +13,13 @@ public class recipe04_06 {
         //Generates a random Integer
         int myInt = random.nextInt();
 
+        //Generates a random Double value
+        double myDouble = random.nextDouble();
+
         //Generates a random float
         float myFloat = random.nextFloat();
+
+
 
 
     }
