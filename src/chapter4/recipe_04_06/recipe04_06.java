@@ -24,5 +24,8 @@ public class recipe04_06 {
         //from this random number generator's sequence.
         double gausDouble = random.nextGaussian();
 
+        //Generates a random Long
+        long myLong = random.nextLong();
+
     }
 }
