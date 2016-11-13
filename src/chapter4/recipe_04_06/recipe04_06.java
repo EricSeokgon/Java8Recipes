@@ -28,7 +28,16 @@ public class recipe04_06 {
         long myLong = random.nextLong();
 
         //Generates a random boolean
-        boolean mtBoolean = random.nextBoolean();
+        boolean myBoolean = random.nextBoolean();
 
+        double rand = Math.random();
+
+        System.out.println("myInt : " + myInt);
+        System.out.println("myDouble : " + myDouble);
+        System.out.println("myFloat : " + myFloat);
+        System.out.println("gausDouble : " + gausDouble);
+        System.out.println("myLong : " + myLong);
+        System.out.println("myBoolean : " + myBoolean);
+        System.out.println("rand : " + rand);
     }
 }
