@@ -1,5 +1,6 @@
 package chapter4.recipe_04_07;
 
+import java.time.Clock;
 import java.time.LocalDate;
 
 /**
@@ -15,5 +16,9 @@ public class recipe04_07 {
     public static void main(String[] args) {
         LocalDate date = LocalDate.now();
         System.out.println("Current Date : " + date);
+
+        Clock clock = Clock.systemUTC();
+        LocalDate date2 = LocalDate.now(clock);
+        System.out.println("Current Date : " + date2);
     }
 }
