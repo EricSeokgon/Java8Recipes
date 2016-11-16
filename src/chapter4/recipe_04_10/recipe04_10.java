@@ -37,6 +37,8 @@ public class recipe04_10 {
         //isAfter(LocalTime) : return Boolean comparison
         System.out.println("Is local time after pastTime? " + time.isAfter(pastTime));
 
-
+        //minusHours(int) : subtract Hours from LocalTime
+        LocalTime minusHrs = time.minusHours(5);
+        System.out.println("Time minus 5 hours : " + minusHrs);
     }
 }
