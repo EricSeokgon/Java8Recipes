@@ -40,5 +40,9 @@ public class recipe04_10 {
         //minusHours(int) : subtract Hours from LocalTime
         LocalTime minusHrs = time.minusHours(5);
         System.out.println("Time minus 5 hours : " + minusHrs);
+
+        //plusMinutes(int) : Add minutes to LocalTime
+        LocalTime plusMins = time.plusMinutes(30);
+        System.out.println("Time plus 30 mins : " + plusMins);
     }
 }
