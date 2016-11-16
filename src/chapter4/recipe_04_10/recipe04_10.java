@@ -23,6 +23,12 @@ public class recipe04_10 {
         LocalDateTime ldt = time.atDate(LocalDate.of(2016, Month.NOVEMBER, 16));
         System.out.println("Local Date Time object : " + ldt);
 
+        //of(int hours, int min) : obtain a specific time
+        LocalTime pastTime = LocalTime.of(1, 10);
+
+        //compareTo(LocalTime) : compare two time. Positive
+        //return value returned if greater
+        System.out.println("Comparing times : " + time.compareTo(pastTime));
 
     }
 }
