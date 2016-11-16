@@ -34,6 +34,9 @@ public class recipe04_10 {
         int hour = time.getHour();
         System.out.println("Hour : " + hour);
 
+        //isAfter(LocalTime) : return Boolean comparison
+        System.out.println("Is local time after pastTime? " + time.isAfter(pastTime));
+
 
     }
 }
