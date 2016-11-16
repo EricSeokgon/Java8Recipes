@@ -1,6 +1,9 @@
 package chapter4.recipe_04_10;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.Month;
 
 /**
  * Project: Java8Recipes
@@ -15,6 +18,11 @@ public class recipe04_10 {
     public static void main(String[] args) {
         LocalTime time = LocalTime.now();
         System.out.println("Current Time : " + time);
+
+        //atDate(LocalDate) : obtain the local date and time
+        LocalDateTime ldt = time.atDate(LocalDate.of(2016, Month.NOVEMBER, 16));
+        System.out.println("Local Date Time object : " + ldt);
+
 
     }
 }
