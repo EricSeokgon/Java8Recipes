@@ -30,5 +30,10 @@ public class recipe04_10 {
         //return value returned if greater
         System.out.println("Comparing times : " + time.compareTo(pastTime));
 
+        //getHour() : return hour in int value (24-hour format)
+        int hour = time.getHour();
+        System.out.println("Hour : " + hour);
+
+
     }
 }
