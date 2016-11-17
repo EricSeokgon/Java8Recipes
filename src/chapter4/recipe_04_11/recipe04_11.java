@@ -44,5 +44,13 @@ public class recipe04_11 {
         int second = ldt.getSecond();
         System.out.println("Current Time : " + hour + ":" + minute + ":" + second);
 
+        // Calculation of Months etc.
+        LocalDateTime currMinusMonths = ldt.minusMonths(12);
+        LocalDateTime currMinusHours = ldt.minusHours(10);
+        LocalDateTime currPlusDays = ldt.plusDays(30);
+        System.out.println("Current Date and Time Minus 12 Months : " + currMinusMonths);
+        System.out.println("Current Date and Time Minus 10 Hours : " + currMinusHours);
+        System.out.println("Current Date and Time Plus 30 Days : " + currPlusDays);
+
     }
 }
