@@ -1,5 +1,6 @@
 package chapter4.recipe_04_11;
 
+import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 import java.time.Month;
 
@@ -25,5 +26,13 @@ public class recipe04_11 {
         int monthValue = ldt.getMonthValue();
         System.out.println("Month : " + month);
         System.out.println("Month Value : " + monthValue);
+
+        //Obtain day of Month, Week, and Year
+        int day = ldt.getDayOfMonth();
+        DayOfWeek dayOfWeek = ldt.getDayOfWeek();
+        int dayOfYr = ldt.getDayOfYear();
+        System.out.println("Day : " + day);
+        System.out.println("Day of week : " + dayOfWeek);
+        System.out.println("Dat of Year : " + dayOfYr);
     }
 }
