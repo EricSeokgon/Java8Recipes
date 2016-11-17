@@ -34,5 +34,9 @@ public class recipe04_11 {
         System.out.println("Day : " + day);
         System.out.println("Day of week : " + dayOfWeek);
         System.out.println("Dat of Year : " + dayOfYr);
+
+        // Obtain year
+        int year = ldt.getYear();
+        System.out.println("Date : " + monthValue + "/" + day + "/" + year);
     }
 }
