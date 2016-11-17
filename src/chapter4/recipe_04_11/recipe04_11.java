@@ -38,5 +38,11 @@ public class recipe04_11 {
         // Obtain year
         int year = ldt.getYear();
         System.out.println("Date : " + monthValue + "/" + day + "/" + year);
+
+        int hour = ldt.getHour();
+        int minute = ldt.getMinute();
+        int second = ldt.getSecond();
+        System.out.println("Current Time : " + hour + ":" + minute + ":" + second);
+
     }
 }
