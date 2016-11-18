@@ -75,5 +75,13 @@ public class recipe04_11 {
         // Print out the integer value for the day of the week
         System.out.println(datOfWeek);
 
+        int hr = gCal.get(Calendar.HOUR);
+        int min = gCal.get(Calendar.MINUTE);
+        int sec = gCal.get(Calendar.SECOND);
+
+        // Print out the time
+        System.out.println(hr + ":" + min + ":" + sec);
+
+
     }
 }
