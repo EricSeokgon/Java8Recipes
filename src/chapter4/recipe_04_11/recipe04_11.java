@@ -1,5 +1,6 @@
 package chapter4.recipe_04_11;
 
+import java.text.DateFormatSymbols;
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 import java.time.Month;
@@ -82,6 +83,11 @@ public class recipe04_11 {
         // Print out the time
         System.out.println(hr + ":" + min + ":" + sec);
 
+        //Create new DateFormatSysbols instance to obtain the String
+        //value for dates
+        DateFormatSymbols symbols = new DateFormatSymbols();
+        String[] days = symbols.getWeekdays();
+        System.out.println(days[datOfWeek]);
 
     }
 }
