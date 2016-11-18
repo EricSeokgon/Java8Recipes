@@ -20,5 +20,12 @@ public class recipe04_12 {
         ZonedDateTime atZone = timestamp.atZone(ZoneId.of("GMT"));
         System.out.println(atZone);
 
+        Instant yesterday = Instant.now().minus(24, ChronoUnit.HOURS);
+        System.out.println("Yesrerday : " + yesterday);
+
+    }
+
+    public static void main(String[] args) {
+        instants();
     }
 }
