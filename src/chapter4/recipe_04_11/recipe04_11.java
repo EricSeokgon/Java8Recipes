@@ -3,6 +3,7 @@ package chapter4.recipe_04_11;
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 import java.time.Month;
+import java.util.Date;
 
 /**
  * Project: Java8Recipes
@@ -52,5 +53,8 @@ public class recipe04_11 {
         System.out.println("Current Date and Time Minus 10 Hours : " + currMinusHours);
         System.out.println("Current Date and Time Plus 30 Days : " + currPlusDays);
 
+        Date date = new Date();
+        System.out.println(date);
+        System.out.println(date.getTime());
     }
 }
