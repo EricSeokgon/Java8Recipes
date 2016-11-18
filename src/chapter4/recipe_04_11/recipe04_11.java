@@ -3,6 +3,7 @@ package chapter4.recipe_04_11;
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 import java.time.Month;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -56,5 +57,18 @@ public class recipe04_11 {
         Date date = new Date();
         System.out.println(date);
         System.out.println(date.getTime());
+
+        Calendar gCal = Calendar.getInstance();
+
+        // Month is based upon a zero index, January is equal to 0,
+        // so we need to add one to the month for it to be in
+        // a standard format
+        int mh = gCal.get(Calendar.MONTH) + 1;
+        int dy = gCal.get(Calendar.DATE);
+        int yr = gCal.get(Calendar.YEAR);
+
+        String dateStr = mh + "/" + dy + "/" + yr;
+        System.out.println(dateStr);
+
     }
 }
