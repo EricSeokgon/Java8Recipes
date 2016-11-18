@@ -70,5 +70,10 @@ public class recipe04_11 {
         String dateStr = mh + "/" + dy + "/" + yr;
         System.out.println(dateStr);
 
+        int datOfWeek = gCal.get(Calendar.DAY_OF_WEEK);
+
+        // Print out the integer value for the day of the week
+        System.out.println(datOfWeek);
+
     }
 }
