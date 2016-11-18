@@ -89,5 +89,13 @@ public class recipe04_11 {
         String[] days = symbols.getWeekdays();
         System.out.println(days[datOfWeek]);
 
+        //Get crazy with the date!
+        int dayOfYear = gCal.get(Calendar.DAY_OF_YEAR);
+        System.out.println(dayOfYear);
+
+        //Print the number of days left i the year
+        System.out.println("Days left in : " + yr + ":" + (365 - dayOfYear));
+
+
     }
 }
