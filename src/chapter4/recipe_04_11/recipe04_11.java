@@ -96,6 +96,10 @@ public class recipe04_11 {
         //Print the number of days left i the year
         System.out.println("Days left in : " + yr + ":" + (365 - dayOfYear));
 
+        //Print the week of the year
+        int week = gCal.get(Calendar.DAY_OF_YEAR);
+        System.out.println(week);
+
 
     }
 }
