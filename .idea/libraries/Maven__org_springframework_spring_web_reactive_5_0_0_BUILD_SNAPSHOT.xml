@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework:spring-web-reactive:5.0.0.BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web-reactive/5.0.0.BUILD-SNAPSHOT/spring-web-reactive-5.0.0.BUILD-20161117.095337-352.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web-reactive/5.0.0.BUILD-SNAPSHOT/spring-web-reactive-5.0.0.BUILD-20161117.095337-352-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web-reactive/5.0.0.BUILD-SNAPSHOT/spring-web-reactive-5.0.0.BUILD-20161117.095337-352-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
