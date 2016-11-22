@@ -3,6 +3,7 @@ package chapter4.recipe_04_15;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Period;
+import java.util.Calendar;
 
 /**
  * Project: Java8Recipes
@@ -22,4 +23,12 @@ public class recipe04_15 {
         System.out.println("Number of Months Difference : " + period.getMonths());
         System.out.println("Number of Year Difference : " + period.getYears());
     }
+
+    //Obtain two instances of the Clendar class
+    Calendar cal1 = Calendar.getInstance();
+    Calendar cal2 = Calendar.getInstance();
+
+
+
+
 }
