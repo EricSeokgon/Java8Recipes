@@ -12,8 +12,7 @@ import java.time.LocalDate;
  * To change this template use File | Settings | File Templates.
  */
 public class recipe04_14 {
-    public static void compareDates(LocalDate ldt1,
-                                    LocalDate ldt2) {
+    public static void compareDates(LocalDate ldt1, LocalDate ldt2) {
         int comparison = ldt1.compareTo(ldt2);
         if (comparison > 0) {
             System.out.println(ldt1 + " is larger than " + ldt2);
