@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.time.Period;
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Project: Java8Recipes
@@ -22,13 +23,14 @@ public class recipe04_15 {
         System.out.println("Number of Day Difference : " + period.getDays());
         System.out.println("Number of Months Difference : " + period.getMonths());
         System.out.println("Number of Year Difference : " + period.getYears());
+
+        //Obtain two instances of the Clendar class
+        Calendar cal1 = Calendar.getInstance();
+        Calendar cal2 = Calendar.getInstance();
+
+        // Set the date to 01/01/2016:12:00
+        cal2.set(2016, 0, 1, 12, 0);
+        Date date1 = cal2.getTime();
+        System.out.println(date1);
     }
-
-    //Obtain two instances of the Clendar class
-    Calendar cal1 = Calendar.getInstance();
-    Calendar cal2 = Calendar.getInstance();
-
-
-
-
 }
