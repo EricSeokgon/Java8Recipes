@@ -3,6 +3,7 @@ package chapter4.recipe_04_15;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Period;
+import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -44,5 +45,13 @@ public class recipe04_15 {
 
         diff = String.format("%d days", days);
         System.out.println(diff);
+
+        LocalDate anniversary = LocalDate.of(2000, Month.NOVEMBER, 11);
+        LocalDate today2 = LocalDate.now();
+        long yearsBetween = ChronoUnit.YEARS.between(anniversary, today2);
+        System.out.println("Years between dates: " + yearsBetween);
+        long daysBetween = ChronoUnit.DAYS.between(anniversary, today2);
+        System.out.println("Days between dates:" + daysBetween);
+
     }
 }
