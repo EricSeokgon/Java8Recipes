@@ -5,6 +5,7 @@ import java.time.Month;
 import java.time.Period;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Project: Java8Recipes
@@ -32,5 +33,16 @@ public class recipe04_15 {
         cal2.set(2016, 0, 1, 12, 0);
         Date date1 = cal2.getTime();
         System.out.println(date1);
+
+        long mail = Math.abs(cal1.getTimeInMillis() - date1.getTime());
+        //Convert to hours
+        long hours = TimeUnit.MILLISECONDS.toHours(mail);
+        //Convert to days
+        long days = TimeUnit.HOURS.toDays(hours);
+        String diff = String.format("%d hours(s) %d min(s)", hours, TimeUnit.MILLISECONDS.toMinutes(mail) - TimeUnit.HOURS.toMinutes(hours));
+        System.out.println(diff);
+
+        diff = String.format("%d days", days);
+        System.out.println(diff);
     }
 }
