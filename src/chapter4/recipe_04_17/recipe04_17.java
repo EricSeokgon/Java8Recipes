@@ -1,5 +1,6 @@
 package chapter4.recipe_04_17;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -33,5 +34,9 @@ public class recipe04_17 {
 
         //Create new clendar
         Calendar cal = Calendar.getInstance();
+
+        //Create instance of simpleDateFormat class using pattern
+        SimpleDateFormat dateFormat1 = new SimpleDateFormat("MMMM dd yyyy");
+        String result = null;
     }
 }
