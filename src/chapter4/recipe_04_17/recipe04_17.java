@@ -38,5 +38,12 @@ public class recipe04_17 {
         //Create instance of simpleDateFormat class using pattern
         SimpleDateFormat dateFormat1 = new SimpleDateFormat("MMMM dd yyyy");
         String result = null;
+
+        result = dateFormat1.format(cal.getTime());
+        System.out.println(result);
+
+        dateFormat1.applyPattern("MM/dd/YY hh:mm:ss");
+        result = dateFormat1.format(cal.getTime());
+        System.out.println(result);
     }
 }
