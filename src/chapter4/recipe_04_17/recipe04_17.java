@@ -45,5 +45,9 @@ public class recipe04_17 {
         dateFormat1.applyPattern("MM/dd/YY hh:mm:ss");
         result = dateFormat1.format(cal.getTime());
         System.out.println(result);
+
+        dateFormat1.applyPattern("hh 'o''clock' a, zzzz");
+        result = dateFormat1.format(cal.getTime());
+        System.out.println(result);
     }
 }
