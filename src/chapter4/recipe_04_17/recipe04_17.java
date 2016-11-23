@@ -3,6 +3,7 @@ package chapter4.recipe_04_17;
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 
 /**
  * Project: Java8Recipes
@@ -29,5 +30,8 @@ public class recipe04_17 {
         ZonedDateTime zdt = ZonedDateTime.now();
         String outout3 = zdt.format(dateTimeFormatter3);
         System.out.println(outout3);
+
+        //Create new clendar
+        Calendar cal = Calendar.getInstance();
     }
 }
