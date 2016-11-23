@@ -3,6 +3,7 @@ package chapter4.recipe_04_16;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 /**
  * Project: Java8Recipes
@@ -24,5 +25,15 @@ public class recipe04_16 {
         //Using a different Parser
         LocalDate ldt2 = LocalDate.parse("2016-11-23", DateTimeFormatter.ISO_DATE);
         System.out.println("Different Parser : " + ldt2);
+
+        //Custom Parser
+        String input = "11/23/2016";
+        try {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyy");
+            LocalDate ldt3 = LocalDate.parse(input, formatter);
+            System.out.println("Custom Parsed Date : " + ldt3);
+        } catch (DateTimeParseException ex) {
+            System.out.println("Not parsable : " + ex);
+        }
     }
 }
