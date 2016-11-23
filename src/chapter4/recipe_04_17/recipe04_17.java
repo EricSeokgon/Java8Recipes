@@ -1,6 +1,7 @@
 package chapter4.recipe_04_17;
 
 import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
@@ -23,5 +24,10 @@ public class recipe04_17 {
         DateTimeFormatter dateTimeFormatter2 = DateTimeFormatter.ofPattern("MM/dd/YY HH:mm:ss");
         String output2 = now.format(dateTimeFormatter2);
         System.out.println(output2);
+
+        DateTimeFormatter dateTimeFormatter3 = DateTimeFormatter.ofPattern("hh 'o''clock' a, zzzz");
+        ZonedDateTime zdt = ZonedDateTime.now();
+        String outout3 = zdt.format(dateTimeFormatter3);
+        System.out.println(outout3);
     }
 }
