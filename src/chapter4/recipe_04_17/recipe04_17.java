@@ -19,5 +19,9 @@ public class recipe04_17 {
         LocalDateTime now = LocalDateTime.now();
         String output = now.format(dateFormatter);
         System.out.println(output);
+
+        DateTimeFormatter dateTimeFormatter2 = DateTimeFormatter.ofPattern("MM/dd/YY HH:mm:ss");
+        String output2 = now.format(dateTimeFormatter2);
+        System.out.println(output2);
     }
 }
