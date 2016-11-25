@@ -38,3 +38,4 @@ public class Statistics implements Serializable {
         return instance;
     }
 }
+
