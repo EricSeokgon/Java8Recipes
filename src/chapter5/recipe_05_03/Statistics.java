@@ -33,7 +33,7 @@ public class Statistics implements Serializable {
         this.teams = teams;
     }
 
-    protected Statistics readResolve() {
+    protected Object readResolve() {
         return instance;
     }
 }
