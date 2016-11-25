@@ -3,11 +3,12 @@ package chapter5.recipe_05_03;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Created by hadeslee on 2016-11-26.
  */
-public class Statistics implements Serializable{
+public class Statistics implements Serializable {
     //Definition for the class instance
     private static volatile Statistics instance = new Statistics();
 
@@ -17,11 +18,12 @@ public class Statistics implements Serializable{
     }
 
     public static Statistics getInstance() {
+        synchronized (Statistics.class) {
+            if (instance == null) {
+                instance = new Statistics();
+            }
+        }
         return instance;
-    }
-
-    public static void setInstance(Statistics instance) {
-        Statistics.instance = instance;
     }
 
     public List getTeams() {
@@ -32,5 +34,7 @@ public class Statistics implements Serializable{
         this.teams = teams;
     }
 
-
+    protected Objects readResolve() {
+        return instance;
+    }
 }
