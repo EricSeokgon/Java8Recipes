@@ -3,7 +3,6 @@ package chapter5.recipe_05_03;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Created by hadeslee on 2016-11-26.
@@ -34,7 +33,7 @@ public class Statistics implements Serializable {
         this.teams = teams;
     }
 
-    protected Objects readResolve() {
+    protected Statistics readResolve() {
         return instance;
     }
 }
