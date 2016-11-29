@@ -17,4 +17,27 @@ public class Statistics implements Serializable {
     //Definition for the class instance
     private static volatile Statistics instance = new Statistics();
     private List teams = new ArrayList();
+
+    public Statistics() {
+    }
+
+    public static Statistics getInstance() {
+        return instance;
+    }
+
+    public static void setInstance(Statistics instance) {
+        Statistics.instance = instance;
+    }
+
+    public List getTeams() {
+        return teams;
+    }
+
+    public void setTeams(List teams) {
+        this.teams = teams;
+    }
+
+    protected Object readResolve() {
+        return instance;
+    }
 }
