@@ -22,6 +22,11 @@ public class Statistics implements Serializable {
     }
 
     public static Statistics getInstance() {
+        synchronized (Statistics.class) {
+            if (instance == null) {
+                instance = new Statistics();
+            }
+        }
         return instance;
     }
 
