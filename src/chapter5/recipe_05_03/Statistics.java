@@ -40,4 +40,5 @@ public class Statistics implements Serializable {
     protected Object readResolve() {
         return instance;
     }
+
 }
