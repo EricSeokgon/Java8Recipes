@@ -1,6 +1,7 @@
 package chapter5.recipe_05_05;
 
 import chapter5.recipe_05_04.Player;
+import chapter5.recipe_05_06.TeamType;
 
 import java.util.List;
 
@@ -40,5 +41,10 @@ public class Team implements TeamType {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    @Override
+    public String getFullName() {
+        return this.name + " - " + this.city;
     }
 }
