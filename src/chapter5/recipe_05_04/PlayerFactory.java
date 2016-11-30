@@ -11,7 +11,7 @@ package chapter5.recipe_05_04;
  */
 public class PlayerFactory {
     public static Player createPlayer(String playerType) {
-        player returnType;
+        Player returnType;
         switch (playerType) {
             case "GOALIE":
                 returnType = new Goalie();
