@@ -14,7 +14,7 @@ import java.util.List;
  * Note:
  * To change this template use File | Settings | File Templates.
  */
-public class Team implements TeamType {
+public class Team implements TeamType{
     private List<Player> players;
     private String name = null;
     private String city = null;
@@ -31,14 +31,22 @@ public class Team implements TeamType {
 
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public void setName(String name) {
+        this.name = name;
+    }
 
+    public String getCity() {
+        return city;
     }
 
     @Override
     public void setCity(String city) {
-
+        this.city = city;
     }
 
     @Override
