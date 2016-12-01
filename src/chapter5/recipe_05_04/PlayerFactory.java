@@ -33,6 +33,10 @@ public class PlayerFactory {
         }
         return returnType;
     }
+
+    public static Object getPlayer() {
+        return null;
+    }
 }
 
 
