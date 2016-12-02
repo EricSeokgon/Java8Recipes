@@ -130,5 +130,16 @@ public class Team implements TeamType, Cloneable, Serializable {
         System.out.println("Team 5:");
         System.out.println(team5.getCity());
         System.out.println(team5.getName());
+
+        if (team1 == team3) {
+            System.out.println("team1 and team3 are equal");
+        } else {
+            System.out.println("team1 and team3 are NOT equal");
+        }
+        if (team1 == team5) {
+            System.out.println("team1 and team4 are equal");
+        } else {
+            System.out.println("team1 and team5 are NOT equal");
+        }
     }
 }
