@@ -115,5 +115,20 @@ public class Team implements TeamType, Cloneable, Serializable {
         System.out.println("Team 4:");
         System.out.println(team4.getCity());
         System.out.println(team4.getName());
+
+        team1.setCity("St. Haeundae");
+        team2.setCity("Busan");
+
+        System.out.println("Team 3:");
+        System.out.println(team3.getCity());
+        System.out.println(team3.getName());
+
+        System.out.println("Team 4:");
+        System.out.println(team4.getCity());
+        System.out.println(team4.getName());
+
+        System.out.println("Team 5:");
+        System.out.println(team5.getCity());
+        System.out.println(team5.getName());
     }
 }
