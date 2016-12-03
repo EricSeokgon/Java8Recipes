@@ -15,6 +15,13 @@ public class Player {
     private String position = null;
     private int status = -1;
 
+    public Player(String josh, String juneau) {
+
+    }
+
+    public Player() {
+    }
+
     public String getFirstName() {
         return firstName;
     }

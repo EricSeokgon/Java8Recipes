@@ -10,4 +10,11 @@ package chapter5.recipe_05_04;
  * To change this template use File | Settings | File Templates.
  */
 public class AllPlayer extends Player {
+    public AllPlayer(String josh, String juneau) {
+        super(josh, juneau);
+    }
+
+    public AllPlayer() {
+
+    }
 }
