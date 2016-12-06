@@ -39,7 +39,7 @@ public abstract class Schedule {
     }
 
     public void setGameDate(Team team, Date date) {
-        obtainSchedule().put(team, date)
+        obtainSchedule().put(team, date);
     }
 
     abstract void calculateDayPlayed(int month);
