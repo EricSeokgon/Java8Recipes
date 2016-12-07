@@ -122,4 +122,13 @@ public class TeamInner {
     public List<Player> getPlayerList() {
         return playerList;
     }
+
+    public static void main(String[] args) {
+        TeamInner inner = new TeamInner();
+        System.out.println("Team Roster");
+        System.out.println("============");
+        for (Player player : inner.getPlayerList()) {
+            System.out.println(player.playerString());
+        }
+    }
 }
