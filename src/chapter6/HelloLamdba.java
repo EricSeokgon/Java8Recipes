@@ -10,5 +10,14 @@ package chapter6;
  * To change this template use File | Settings | File Templates.
  */
 public class HelloLamdba {
+    public interface HelloType {
+        void hello(String text);
+    }
 
+    public static void main(String[] args) {
+        HelloType helloLamdba = (String text) -> {
+            System.out.println("Hello " + text);
+        };
+        helloLamdba.hello("Lamdba");
+    }
 }
