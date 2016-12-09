@@ -53,4 +53,8 @@ public class Player {
     public void setStatus(int status) {
         this.status = status;
     }
+
+    public static <U extends Comparable<? super U>, T> U getGoals(T t) {
+        return null;
+    }
 }
