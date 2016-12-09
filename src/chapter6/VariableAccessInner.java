@@ -20,5 +20,14 @@ public class VariableAccessInner {
             l1.accept(CLASSA);
             l1.accept(passedIn);
         }
+
+        public void lambdaInMethod(String hello) {
+        }
+    }
+
+    public static void main(String[] args) {
+        VariableAccessInner vai = new VariableAccessInner();
+        VariableAccessInner.InnerClass inner = vai.new InnerClass();
+        inner.lambdaInMethod("Hello");
     }
 }
