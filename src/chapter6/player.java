@@ -13,7 +13,9 @@ public class player {
     public player() {
     }
 
-    public player(String position, int status) {
+    public player(String firsName, String lastName, String position, int status) {
+        this.firsName = firsName;
+        this.lastName = lastName;
         this.position = position;
         this.status = status;
     }
