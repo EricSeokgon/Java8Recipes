@@ -1,5 +1,6 @@
 package chapter6;
 
+
 /**
  * Project: Java8Recipes
  * FileName: PlayerUtility
@@ -10,7 +11,7 @@ package chapter6;
  * To change this template use File | Settings | File Templates.
  */
 public class PlayerUtility {
-    public int compareByGoal(Player a, Player b){
+    public int compareByGoal(player a, player b){
         int eval;
         if(a.getGoals() > b.getGoals()){
             eval = 1;
