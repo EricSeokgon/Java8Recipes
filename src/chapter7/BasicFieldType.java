@@ -12,4 +12,11 @@ package chapter7;
 public class BasicFieldType {
     public enum FieldType {PASSWORD, EMAIL_ADDRESS, PHONE_NUMBER, SOCIAL_SECURITY_NUMBER}
 
+    public static void main(String[] args) {
+        FieldType field = FieldType.EMAIL_ADDRESS;
+        System.out.println("field.name() : " + field.name());
+        System.out.println("field.ordinal() : " + field.ordinal());
+        System.out.println("field.toString() : " + field.toString());
+    }
+
 }
