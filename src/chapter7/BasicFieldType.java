@@ -25,6 +25,10 @@ public class BasicFieldType {
         System.out.println("field == EMAIL_ADDRESS: " + (field == FieldType.EMAIL_ADDRESS));
 // Won't compile – illustrates type safety of enum
 // System.out.println("field == \”EMAIL_ADDRESS\": " + (field == "EMAIL_ADDRESS"));
+        System.out.println("field.compareTo(EMAIL_ADDRESS): " +
+                field.compareTo(FieldType.EMAIL_ADDRESS));
+        System.out.println("field.compareTo(PASSWORD): " + field.compareTo(FieldType.PASSWORD));
+        System.out.println("field.valueOf(\"EMAIL_ADDRESS\"): " + field.valueOf("EMAIL_ADDRESS"));
     }
 
 }
