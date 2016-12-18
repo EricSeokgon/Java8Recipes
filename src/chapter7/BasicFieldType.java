@@ -1,5 +1,7 @@
 package chapter7;
 
+import java.util.Arrays;
+
 /**
  * Project: Java8Recipes
  * FileName: BasicFieldType
@@ -29,6 +31,14 @@ public class BasicFieldType {
                 field.compareTo(FieldType.EMAIL_ADDRESS));
         System.out.println("field.compareTo(PASSWORD): " + field.compareTo(FieldType.PASSWORD));
         System.out.println("field.valueOf(\"EMAIL_ADDRESS\"): " + field.valueOf("EMAIL_ADDRESS"));
+
+        try {
+            System.out.print("field.valueOf(\"email_address\"): ");
+            System.out.println(FieldType.valueOf("email_address"));
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.toString());
+        }
+        System.out.println("FieldType.values(): " + Arrays.toString(FieldType.values()));
     }
 
 }
