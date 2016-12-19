@@ -1,5 +1,7 @@
 package chapter7;
 
+import java.util.Scanner;
+
 /**
  * Created by hadeslee on 2016-12-20.
  */
@@ -60,4 +62,21 @@ public class RockPaperScissors {
         }
     }
 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Let's Play Rock, Paper, Scissors");
+        System.out.println(" Enter 1 (Rock)");
+        System.out.println(" Enter 2 (Paper)");
+        System.out.println(" Enter 3 (Scissors)");
+        System.out.println(">");
+
+        int playerHand = input.hasNextInt() ? input.nextInt() : -99;
+        int computerHand = (int) (3 * Math.random()) + 1;
+
+        System.out.println("Your hand: (" + playerHand + ") ");
+        getHand(playerHand);
+        System.out.println("My hand: (" + computerHand + ") ");
+        getHand(computerHand);
+        playHands(playerHand, computerHand);
+    }
 }
