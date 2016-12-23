@@ -26,8 +26,10 @@ public class GradeAnalyzer {
         int mean = 0;
         if (_grades != null && _grades.length > 0) {
             int sum = 0;
-            for (int i = 0; i < _grades.length; i++) {
-                sum += _grades[i];
+            //for (int i = 0; i < _grades.length; i++) {
+            //sum += _grades[i];
+            for (int grade : _grades) {
+                sum += grade;
             }
             mean = sum / _grades.length;
         }
