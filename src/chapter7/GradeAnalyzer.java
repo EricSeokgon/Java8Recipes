@@ -93,6 +93,13 @@ public class GradeAnalyzer {
         System.out.println("MEan of all grades is " + ga.meanGrade());
         System.out.println("Min grade is " + ga.minGrade());
         System.out.println("Max grade is " + ga.maxGrade());
+        Object testArray = ga.get_grades();
+        Class testClass = testArray.getClass();
+        System.out.println("isArray :" + testClass.isArray());
+        System.out.println("getClass :" + testClass.getName());
+        System.out.println("getSupperclass :" + testClass.getSuperclass().getName());
+        System.out.println("getComponentType : " + testClass.getComponentType());
+        System.out.println("Arrays.toString : " + Arrays.toString((int[]) testArray));
 
     }
 
