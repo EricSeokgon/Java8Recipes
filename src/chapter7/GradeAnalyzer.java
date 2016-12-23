@@ -83,6 +83,16 @@ public class GradeAnalyzer {
         System.out.println("MEan of all grades is " + ga.meanGrade());
         System.out.println("Min grade is " + ga.minGrade());
         System.out.println("Max grade is " + ga.maxGrade());
+        ga.set_grades(initGrades2());
+        System.out.println("Grades 2:");
+        System.out.println("MEan of all grades is " + ga.meanGrade());
+        System.out.println("Min grade is " + ga.minGrade());
+        System.out.println("Max grade is " + ga.maxGrade());
+        ga.set_grades(initGrades3());
+        System.out.println("Grades 3:");
+        System.out.println("MEan of all grades is " + ga.meanGrade());
+        System.out.println("Min grade is " + ga.minGrade());
+        System.out.println("Max grade is " + ga.maxGrade());
 
     }
 
