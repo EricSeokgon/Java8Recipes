@@ -57,4 +57,8 @@ public class Player {
     public static <U extends Comparable<? super U>, T> U getGoals(T t) {
         return null;
     }
+
+    public void setGoals(int i) {
+
+    }
 }
