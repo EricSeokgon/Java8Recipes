@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 /**
@@ -49,6 +50,18 @@ public class StreamExample {
         System.out.println("First Stock:" + maybe.get().getName());
 
         List newStocks = new ArrayList();
-
+        Optional<Stock> maybeNot = newStocks.stream().findFirst();
+        Consumer<Stock> myConsumer = (s) -> {
+            System.out.println("First Stock (Optional): " + s.getName());
+        };
+        maybeNot.ifPresent(myConsumer);
+        if (maybeNot.isPresent()) {
+            System.out.println(maybeNot.get().getName());
+        }
+        newStocks.add(new Stock("MCD", "McDonalds", 300.0));
+        Optional<Stock> maybeNow = newStocks.stream()
+                .findFirst();
+        maybeNow.ifPresent(myConsumer);
     }
+
 }
