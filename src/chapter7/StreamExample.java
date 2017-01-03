@@ -1,7 +1,10 @@
 package chapter7;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
 
 /**
  * Project: Java8Recipes
@@ -30,5 +33,22 @@ public class StreamExample {
         boolean allGt = myStocks.stream()
                 .allMatch(s -> s.getShares() > 100.0);
         System.out.println("All Stocks Greater than 100.0 Shares? " + allGt);
+        System.out.println("== We have more than 100 shares of the following:");
+        myStocks.stream()
+                .filter(s -> s.getShares() > 100.0)
+                .forEach(s -> System.out.println(s.getName()));
+
+        System.out.println("== the following stocks are sorted by shares:");
+        Comparable<Stock> byShares = Comparator.comparing(Stock::getShares);
+        Stream<Stock> sortedByShares = myStocks.stream()
+                .sorted(byShares);
+        sortedByShares.forEach(s -> System.out.println("Stock: " + s.getName() +
+                "- Shares: " + s.getShares()));
+
+        Optional<Stock> maybe = myStocks.stream().findFirst();
+        System.out.println("First Stock:" + maybe.get().getName());
+
+        List newStocks = new ArrayList();
+
     }
 }
