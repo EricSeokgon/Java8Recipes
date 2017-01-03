@@ -27,6 +27,7 @@ public class StreamExample {
         myStocks.add(new Stock("MCD", "McDonalds", 300.0));
     }
 
+
     public static void main(String[] args) {
         createStocks();
         myStocks.stream()
