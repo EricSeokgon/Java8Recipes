@@ -19,7 +19,7 @@ public class Catching {
     private boolean isStringShorterThanFiveCharacters(String aString) {
         try {
             return aString.length() > 5;
-        } catch (NullPointerException e) {
+        } catch (NumberFormatException | NullPointerException e) {
             System.out.println("An Exception Occurred!");
             return false;
         }
