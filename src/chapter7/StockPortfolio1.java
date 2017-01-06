@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Project: Java8Recipes
@@ -36,5 +37,11 @@ public class StockPortfolio1 {
             }
         }
         return alertList;
+    }
+    public List<Stock> alertList() {
+        return
+                portfolio.values().stream()
+                        .filter(s -> !StockScreener.screen(s.getSymbol(), StockScreener.Screen.PE, 20))
+                .collect(Collectors.toList());
     }
 }
