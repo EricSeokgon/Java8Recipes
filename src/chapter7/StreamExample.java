@@ -1,11 +1,9 @@
 package chapter7;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
-import java.util.stream.Stream;
 
 /**
  * Project: Java8Recipes
@@ -41,11 +39,11 @@ public class StreamExample {
                 .forEach(s -> System.out.println(s.getName()));
 
         System.out.println("== the following stocks are sorted by shares:");
-        Comparable<Stock> byShares = Comparator.comparing(Stock::getShares);
+        /*Comparable<Stock> byShares = Comparator.comparing(Stock::getShares);
         Stream<Stock> sortedByShares = myStocks.stream()
-                .sorted(byShares);
+                .sorted((Comparator<? super Stock>) byShares);
         sortedByShares.forEach(s -> System.out.println("Stock: " + s.getName() +
-                "- Shares: " + s.getShares()));
+                "- Shares: " + s.getShares()));*/
 
         Optional<Stock> maybe = myStocks.stream().findFirst();
         System.out.println("First Stock:" + maybe.get().getName());
