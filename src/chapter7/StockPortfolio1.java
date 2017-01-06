@@ -1,9 +1,6 @@
 package chapter7;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -38,10 +35,20 @@ public class StockPortfolio1 {
         }
         return alertList;
     }
+
     public List<Stock> alertList() {
         return
                 portfolio.values().stream()
                         .filter(s -> !StockScreener.screen(s.getSymbol(), StockScreener.Screen.PE, 20))
-                .collect(Collectors.toList());
+                        .collect(Collectors.toList());
+    }
+
+    public void remove(List<String> sellList) {
+        Iterator<String> keyIter = portfolio.keySet().iterator();
+        while (keyIter.hasNext()) {
+            if (sellList.contains(keyIter.next())) {
+                keyIter.remove();
+            }
+        }
     }
 }
