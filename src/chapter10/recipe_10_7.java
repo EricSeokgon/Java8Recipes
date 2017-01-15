@@ -1,42 +1,30 @@
 package chapter10;
 
+import java.util.concurrent.CountDownLatch;
+
 /**
  * Created by hadeslee on 2017-01-15.
  */
 public class recipe_10_7 {
-    private final Object objectToSync = new Object();
-
+    CountDownLatch latch = new CountDownLatch(2);
     private void start() {
         loadItems();
         Thread inventoryThread = new Thread(() -> {
             System.out.println("Loading Inventory from Database...");
             loadInventory();
-            synchronized (objectToSync) {
-                objectToSync.notify();
-            }
+            latch.countDown();
         });
-        synchronized (objectToSync) {
-            inventoryThread.start();
-            try {
-                objectToSync.wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+        inventoryThread.start();
         Thread ordersThread = new Thread(() -> {
             System.out.println("Loading Orders from XML Web service...");
             loadOrders();
-            synchronized (objectToSync) {
-                objectToSync.notify();
-            }
+            latch.countDown();
         });
-        synchronized (objectToSync) {
-            ordersThread.start();
-            try {
-                objectToSync.wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        ordersThread.start();
+        try {
+            latch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
         processOrders();
     }
