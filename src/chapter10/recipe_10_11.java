@@ -16,7 +16,7 @@ public class recipe_10_11 {
 
     public static void main(String[] args) {
 
-        private void start () {
+        private void start() {
             DoubleAdder da = null;
             Thread thread1 = new Thread(() -> {
                 for (int i1 = 0; i1 < 10; i1++) {
