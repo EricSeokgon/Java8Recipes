@@ -55,18 +55,4 @@ public class recipe_10_5 {
             inventoryLock.unlock();
         }
     }
-
-    private void displayOrders() {
-        try {
-            inventoryLock.lock();
-            Arrays customerOrders = null;
-            customerOrders.stream().forEach((order) -> {
-                System.out.println(order.getQuantityOrdered() + " " +
-                        order.getItemOrdered() + " for " + order.getCustomerName());
-            });
-        } finally {
-            inventoryLock.unlock();
-        }
-    }
-
 }
