@@ -1,0 +1,5 @@
+<root>
+    <item name='java.util.Locale.Builder'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>
