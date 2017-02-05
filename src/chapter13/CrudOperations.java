@@ -16,6 +16,7 @@ import java.sql.Statement;
  */
 public class CrudOperations {
     static CreateConnection createConn;
+
     public static void main(String[] args) {
         createConn = new CreateConnection();
         performCreate();
@@ -25,7 +26,8 @@ public class CrudOperations {
         System.out.println("-- Final State --");
         performRead();
     }
-    private static void performCreate(){
+
+    private static void performCreate() {
         String sql = "INSERT INTO RECIPES VALUES(" +
                 "next value for recipes_seq, " +
                 "'13-4', " +
@@ -36,7 +38,7 @@ public class CrudOperations {
              Statement stmt = conn.createStatement();) {
 // Returns row-count or 0 if not successful
             int result = stmt.executeUpdate(sql);
-            if (result > 0){
+            if (result > 0) {
                 System.out.println("-- Record created --");
             } else {
                 System.out.println("!! Record NOT Created !!");
@@ -46,7 +48,8 @@ public class CrudOperations {
             e.printStackTrace();
         }
     }
-    private static void performRead(){
+
+    private static void performRead() {
         String qry = "select recipe_number, recipe_name, description from recipes";
         try (Connection conn = createConn.getConnection();
              Statement stmt = conn.createStatement();) {
@@ -62,14 +65,14 @@ public class CrudOperations {
         }
     }
 
-    private static void performUpdate(){
+    private static void performUpdate() {
         String sql = "UPDATE RECIPES " +
                 "SET RECIPE_NUMBER = '13-5' " +
                 "WHERE RECIPE_NUMBER = '13-4'";
         try (Connection conn = createConn.getConnection();
              Statement stmt = conn.createStatement();) {
             int result = stmt.executeUpdate(sql);
-            if (result > 0){
+            if (result > 0) {
                 System.out.println("-- Record Updated --");
             } else {
                 System.out.println("!! Record NOT Updated !!");
@@ -78,12 +81,13 @@ public class CrudOperations {
             e.printStackTrace();
         }
     }
-    private static void performDelete(){
+
+    private static void performDelete() {
         String sql = "DELETE FROM RECIPES WHERE RECIPE_NUMBER = '11-5'";
         try (Connection conn = createConn.getConnection();
              Statement stmt = conn.createStatement();) {
             int result = stmt.executeUpdate(sql);
-            if (result > 0){
+            if (result > 0) {
                 System.out.println("-- Record Deleted --");
             } else {
                 System.out.println("!! Record NOT Deleted!!");
