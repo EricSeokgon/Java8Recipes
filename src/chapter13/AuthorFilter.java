@@ -19,6 +19,12 @@ public class AuthorFilter implements Predicate {
         this.colName = colName;
     }
 
+    public AuthorFilter(String[] authors, int colNumber) {
+        this.authors = authors;
+        this.colNumber = colNumber;
+        this.colName = null;
+    }
+
     @Override
     public boolean evaluate(RowSet rs) {
         return false;
