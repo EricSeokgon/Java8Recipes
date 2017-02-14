@@ -37,6 +37,13 @@ public class AuthorFilter implements Predicate {
 
     @Override
     public boolean evaluate(Object value, String columnName) throws SQLException {
+        if (colName.equalsIgnoreCase(this.colName)) {
+            for (String author : this.authors) {
+                if (author.equalsIgnoreCase((String)value)) {
+                    return true;
+                }
+            }
+        }
         return false;
     }
 }
