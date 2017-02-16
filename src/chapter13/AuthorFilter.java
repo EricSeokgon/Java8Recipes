@@ -27,8 +27,28 @@ public class AuthorFilter implements Predicate {
 
     @Override
     public boolean evaluate(RowSet rs) {
+        if (rs == null)
+            return false;
+        try {
+            for (int i = 0; i < this.authors.length; i++) {
+                String authorLast = null;
+                if (this.colNumber > 0) {
+                    authorLast = (String) rs.getObject(this.colNumber);
+                } else if (this.colName != null) {
+                    authorLast = (String) rs.getObject(this.colName);
+                } else {
+                    return false;
+                }
+                if (authorLast.equalsIgnoreCase(authors[i])) {
+                    return true;
+                }
+            }
+        } catch (SQLException e) {
+            return false;
+        }
         return false;
     }
+
 
     @Override
     public boolean evaluate(Object value, int column) throws SQLException {
