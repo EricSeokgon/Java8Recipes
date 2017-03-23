@@ -50,7 +50,6 @@ public class AuthorFilter implements Predicate {
         return false;
     }
 
-
     @Override
     public boolean evaluate(Object value, int colNumber) {
         if (colNumber == this.colNumber) {
