@@ -54,7 +54,7 @@ public class AuthorFilter implements Predicate {
     public boolean evaluate(Object value, int colNumber) {
         if (colNumber == this.colNumber) {
             for (String author : this.authors) {
-                if (author.equalsIgnoreCase((String)value)) {
+                if (author.equalsIgnoreCase((String) value)) {
                     return true;
                 }
             }
