@@ -42,6 +42,7 @@ public class AuthorFilter implements Predicate {
                 if (authorLast.equalsIgnoreCase(authors[i])) {
                     return true;
                 }
+
             }
         } catch (SQLException e) {
             return false;
