@@ -71,6 +71,7 @@ public class AuthorFilter implements Predicate {
                 }
             }
         }
+
         return false;
     }
 }
